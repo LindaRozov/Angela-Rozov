@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Angela Rozov your psychologist</title>
+<title>Анжела Розова Ваш психолог</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<style ></style>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -17,51 +16,53 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent1">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="aboutme.html">About me</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="articles.html">Articles</a></li>
-          <li class="nav-item"> <a class="nav-link" href="contactme.html">Contact me</a></li>
+          <li class="nav-item active"><a class="nav-link" href="index.html">Главная<span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="aboutme.html">Обо мне</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="articles.html">Статьи</a></li>
+          <li class="nav-item"> <a class="nav-link" href="contactme.html">Связаться</a></li>
         </ul>
       </div>
     </nav>
-    <h1 class="text-center">Contact me</h1>
+    <h1 class="text-center">Связаться со мной</h1>
     <img src="images/contactme.jpg" alt="" width="1500" height="350" class="card-img"/> <br>
     <br>
-    <form>
+    <form action="emailBuilder.php" method="POST">
       <div class="form-group">
-        <label for="exampleInputEmail1" class= "form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        <label for="exampleInputEmail1" class= "form-label">Ваш электронный адрес</label>
+        <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Введите пожалуйста Ваш электронный адрес">
       </div>
       <div class="form-group">
-        <label for="exampleInputName1" class= "form-label">Your name</label>
-        <input type="name" class="form-control" id="exampleInputName1" placeholder="Enter your name">
+        <label for="exampleInputName1" class= "form-label">Ваше имя</label>
+        <input name="name" type="name" class="form-control" id="exampleInputName1" placeholder="Введите пожалуйста Ваше имя">
       </div>
       <div class="form-group">
-        <label for="exampleInputAge1" class= "form-label">Your age</label>
-        <input type="age" class="form-control" id="exampleInputAge1" placeholder="Enter your age">
+        <label for="exampleInputAge1" class= "form-label">Ваш возраст</label>
+        <input name="age" type="age" class="form-control" id="exampleInputAge1" placeholder="Введите пожалуйста Ваш возраст">
       </div>
       <div class="form-group">
-        <label for="exampleFormControlSelect1" class= "form-label">Your gender</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>Male</option>
-          <option>Female</option>
-          <option>Custom</option>
+        <label for="exampleFormControlSelect1" class= "form-label">Ваш пол</label>
+        <select name="sex" class="form-control" id="exampleFormControlSelect1">
+          <option>Мужчина</option>
+          <option>Женщина</option>
+          <option>Другое</option>
         </select>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlTextarea1" class= "form-label">Your message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+        <label for="exampleFormControlTextarea1" class= "form-label">Ваше сообщение</label>
+        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Отправить</button>
     </form>
     <br>
     <br>
     <br>
+	<br>
     <footer>
       <div class="row">
         <div class="col"><img src="images/Mom's logo.png" alt="" width="71" height="88" class="img-fluid"/></div>
         <div class="col">
           <h6 class="text-capitalize">Copyright @ All rights reserved</h6>
+          <p>Except for <a class="social" href="copyrights.html">images</a></p>
         </div>
         <div class="col"> <a class="social" href="https://www.instagram.com/angelarozova/?hl=en" target="_blank">Instagram</a> <br>
           <a class="social" href="https://www.facebook.com/angela.rozova" target="_blank">Facebook</a> <br>
