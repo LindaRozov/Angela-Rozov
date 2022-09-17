@@ -1,3 +1,5 @@
+<?php
+
 //working_directory/emailBuilder.php
 
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -11,7 +13,7 @@ $sendSmtpEmail = new \SendinBlue\Client\Model\SendSmtpEmail([
 	'replyTo' => ['name' => 'Sendinblue', 'email' => 'contact@sendinblue.com'],
 	'to' => [[ 'name' => 'Max Mustermann', 'email' => 'angelarozova@gmail.com']],
 	'htmlContent' => '<html><body><h1>This is a transactional email {{params.bodyMessage}}</h1></body></html>',
-	params' => ['bodyMessage' => 'made just for you!']
+	'params' => ['bodyMessage' => 'made just for you!']
 ]);
 
 try {
@@ -20,3 +22,5 @@ try {
 } catch (Exception $e) {
 	echo $e->getMessage(),PHP_EOL;
 }
+
+?>
